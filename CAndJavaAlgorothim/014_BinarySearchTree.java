@@ -52,6 +52,19 @@ public class BinarySearchTree {
       } while (addFlag == false);
     }
 
+    // 이진트리 DFS
+    public static void printLogicalBST(int currentIdx) {
+      if (currentIdx != -1) {
+        System.out.printf("tree[%d] : data = %d, right = %d\n", 
+            currentIdx, tree[currentIdx].data,
+            tree[currentIdx].left, tree[currentIdx].right);
+
+        // 재귀 호출 부분
+        printLogicalBST(tree[currentIdx].left);
+        printLogicalBST(tree[currentIdx].right);
+      }
+    }
+
     // 이진 검색 트리의 실체인 배열을 물리적 위치 순서로 표시하는 메소드
     public static void main (String[] args) {
       // 자바는 인스턴스 생성이 필요 (이 처리는 의사코드나 C에서는 불필요)

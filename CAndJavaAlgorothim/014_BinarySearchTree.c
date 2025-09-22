@@ -59,3 +59,43 @@ void addBST(int data) {
   // 다음에 추가할 요소를 위해 물리적 위치의 인덱스를 1 늘림
   newIdx++;
 }
+
+// 이진 검색 트리의 실체인 배열을 물리적 위치 순서로 표시하는 함수
+void printPhysicalBST() {
+  int i;
+
+  for (i = 0; i < newIdx; i++) {
+    printf("tree[%d]: data = %d, left = %d, right = %d\n", i , tree[i].data, tree[i].left, tree[i].right);
+  }
+}
+
+
+// 이진트리 DFS
+void printLogicalBST(int currentIdx) {
+  if (currentIdx != -1) {
+    printf("tree[%d]: data = %d, left = %d, right = %d\n",
+        currentIdx, tree[currentIdx].data,
+        tree[currentIdx].left, tree[currentIdx].right);
+
+    // recurrsion
+    printLogicalBST(tree[currentIdx].left);
+    printLogicalBST(tree[currentIdx].right);
+  }
+}
+
+// 프로그램 실행의 시작점인 main 함수
+int main() {
+  // 요소를 추가하면서 이진 탐색 트리를 구성
+  addBST(4);
+  addBST(6);
+  addBST(5);
+  addBST(2);
+  addBST(3);
+  addBST(7);
+  addBST(1);
+
+  // 물리적 위치 순서로 표시
+  printPhysicalBST();
+
+  return 0;
+}
