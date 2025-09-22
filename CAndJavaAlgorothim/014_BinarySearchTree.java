@@ -65,6 +65,26 @@ public class BinarySearchTree {
       }
     }
 
+    //이진트리 탐색
+    public static int searchBST(int x) {
+      int idx; // 찾은 요소의 인덱스
+      int currentIdx; // 현재 요소의 인덱스
+      int idx = -1;
+      currentIdx = rootIdx;
+
+      while (currentIdx != -1) {
+        if (tree[currentIdx].data == x) {
+          idx = currentIdx;
+          break;
+        } else if (tree[currentIdx].data > x) {
+          currentIdx = tree[currentIdx].left;
+        } else {
+          currentIdx = tree[currentIdx].right;
+        }
+      }
+      return idx;
+    }
+
     // 이진 검색 트리의 실체인 배열을 물리적 위치 순서로 표시하는 메소드
     public static void main (String[] args) {
       // 자바는 인스턴스 생성이 필요 (이 처리는 의사코드나 C에서는 불필요)
@@ -88,5 +108,9 @@ public class BinarySearchTree {
       // 이진 탐색 트리를 DFS로 표시
       System.out.printf("------------------------------------------\n");
       printLogicalBST(rootIdx);
+
+      // 이진 탐색 트리를 탐색
+      System.out.printf("data값이 '5'일 때 물리적 위치 탐색 결과 = tree[%d]\n", searchBST(5));
+      System.out.printf("data값이 '8'일 때 물리적 위치 탐색 결과 = tree[%d]\n", searchBST(8));
     }
   }

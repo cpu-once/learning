@@ -83,6 +83,28 @@ void printLogicalBST(int currentIdx) {
   }
 }
 
+
+// 이진 트리 탐색
+int searchBST(int x) {
+  int idx; // 찾을 요소의 인덱스
+  int currentIdx; // 현재 요소의 인덱스
+  idx = -1;
+  currentIdx = rootIdx;
+
+  while (currentIdx != -1) {
+    if (tree[currentIdx].data == x) {
+      idx = currentIdx;
+      break;
+    } else if (tree[currentIdx].data > x ) {
+      currentIdx = tree[currentIdx].left;
+    } else {
+      currentIdx = tree[currentIdx].right;
+    }
+  }
+
+  return idx;
+}
+
 // 프로그램 실행의 시작점인 main 함수
 int main() {
   // 요소를 추가하면서 이진 탐색 트리를 구성
@@ -101,6 +123,11 @@ int main() {
   // 이진 탐색 트리를 DFS로 표시
   printf("------------------------------\n");
   printLogicalBST(rootIdx);
+
+
+  // 이진 트리 탐색
+  printf("data값이 '5'일 때의 물리적 위치 탐색 결과 = tree[%d]\n", searchBST(5));
+  printf("data값이 '8'일 때의 물리적 위치 탐색 결과 = tree[%d]\n", searchBST(8));
 
   return 0;
 }
