@@ -105,6 +105,24 @@ int searchBST(int x) {
   return idx;
 }
 
+
+// recursion을 이용한 이진 트리 탐색
+int searchRecBST(int x, int currentIdx) {
+  if (currentIdx == -1) {
+    return -1;
+  } else {
+    if (tree[currentIdx].data == x) {
+      return currentIdx;
+    } else if (tree[currentIdx].data > x) {
+      // 재귀 호출 부분
+      return searchRecBST(x, tree[currentIdx].left);
+    } else {
+      // 재귀 호출 부분
+      return searchRecBST(x, tree[currentIdx].right);
+    }
+  }
+}
+
 // 프로그램 실행의 시작점인 main 함수
 int main() {
   // 요소를 추가하면서 이진 탐색 트리를 구성
@@ -128,6 +146,13 @@ int main() {
   // 이진 트리 탐색
   printf("data값이 '5'일 때의 물리적 위치 탐색 결과 = tree[%d]\n", searchBST(5));
   printf("data값이 '8'일 때의 물리적 위치 탐색 결과 = tree[%d]\n", searchBST(8));
+
+
+  // 재귀 호출로 이진 탐색 트리를 탐색
+  printf("data값이 '5'일 때의 물리적 위치 탐색 결과 = tree[%d]\n",
+      searchRecBST(5, rootIdx));
+  printf("data값이 '8'일 때의 물리적 위치 탐색 결과 = tree[%d]\n",
+      searchRecBST(8, rootidx));
 
   return 0;
 }

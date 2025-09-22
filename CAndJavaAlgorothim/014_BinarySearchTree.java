@@ -85,6 +85,24 @@ public class BinarySearchTree {
       return idx;
     }
 
+
+    // 재귀 호출로 이진 탐색 트리를 탐색하는 메소드
+    public static int  searchRecBST(int x, int currentIdx) {
+      if (currentIdx == -1) {
+        return -1;
+      } else {
+        if (tree[currentIdx].data == x) {
+          return currentIdx;
+        } else if (tree[currentIdx].data > x) {
+          //재귀 호출 부분
+          return searchRecBST(x, tree[currentIdx].left);
+        } else {
+          // 재귀 호출 부분
+          return searchRecBST(x, tree[currentIdx].right;
+        }
+      }
+    }
+
     // 이진 검색 트리의 실체인 배열을 물리적 위치 순서로 표시하는 메소드
     public static void main (String[] args) {
       // 자바는 인스턴스 생성이 필요 (이 처리는 의사코드나 C에서는 불필요)
@@ -112,5 +130,13 @@ public class BinarySearchTree {
       // 이진 탐색 트리를 탐색
       System.out.printf("data값이 '5'일 때 물리적 위치 탐색 결과 = tree[%d]\n", searchBST(5));
       System.out.printf("data값이 '8'일 때 물리적 위치 탐색 결과 = tree[%d]\n", searchBST(8));
+
+
+      // 재귀 호출로 이진 탐색 트리를 탐색
+      System.out.printf("------------------------------------");
+      System.out.printf("data 값이 '5' 일 때의 물리적 위치 탐색 결과 = %d\n",
+          searchRecBST(5, rootIdx));
+      System.out.printf("data 값이 '8' 일 때의 물리적 위치 탐색 결과 = %d\n",
+          searchRecBST(8, rootIdx));
     }
   }
