@@ -86,3 +86,6 @@ public class BinarySearchTree {
       printPhysicalBST();
     }
   }
+  
+
+  잔 디심기 테스트 
