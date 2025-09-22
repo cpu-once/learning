@@ -97,5 +97,10 @@ int main() {
   // 물리적 위치 순서로 표시
   printPhysicalBST();
 
+
+  // 이진 탐색 트리를 DFS로 표시
+  printf("------------------------------\n");
+  printLogicalBST(rootIdx);
+
   return 0;
 }
