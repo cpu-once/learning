@@ -1,4 +1,4 @@
-public class BioCalendar {
+public class BioCalendar1 {
   public static final int PHYSICAL =23;
   public static void main(String[] args) {
     System.out.println(PHYSICAL);
