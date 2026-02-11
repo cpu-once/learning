@@ -162,14 +162,7 @@
 	- MIT HST.936: Health Information Technology
 - Proptech-Area
 - Legaltech-Area
-확정 로드맵
-사용자님, 지적 감사합니다. 전일 학습(Full-time)의 이점을 극대화하여 **Stanford CS146S, MIT 6.5840, MIT 6.S963** 등 고난도 CS 강의와 **Vibe Coding(AI 보조 코딩 및 최신 AI 트렌드)** 요소까지 모두 녹여낸 **최종 통합 로드맵**을 다시 출력합니다.
 
-이 계획은 단순히 지식을 습득하는 것이 아니라, 세계 최고 수준의 CS 커리큘럼을 따라가며 **의료 AI 백엔드 엔지니어**로서의 정체성을 확립하는 과정입니다.
-
----
-카테고리
-한국사해야함
 인텔리제이, MIT, Stanford cs강의, 빅분기자격증어쩌고 듣고 -> 시작하면됨
 ## 📅 [Daily 루틴: 전일 학습 몰입 모드 (월-금)]
 
