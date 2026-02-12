@@ -1,5 +1,9 @@
 
 - Daily
+	- 
+	- 깃 강의?
+	- 머메이드
+	- 제미나이 CLI?
 	- 박미진 컴퓨터일반 기출 문제집 풀기
 	- NCS 연습
 	- SICP(http://mitpress.mit.edu/sicp)
