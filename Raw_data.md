@@ -154,7 +154,7 @@
 		- 소프트웨어아키텍처 The Hardest part(교보ebook)
 		- 프로메테우스 오픈소스 모니터링 시스템
 		- 
-- Medical-Area
+- Meditech-Area
 	- 보건의료정보학
 	- 박억숭 인강
 	- Harvard CS50 for Medicine
@@ -162,6 +162,7 @@
 	- MIT HST.936: Health Information Technology
 - Proptech-Area
 - Legaltech-Area
+- Machine Learning with my books and what i learn
 
 인텔리제이, MIT, Stanford cs강의, 빅분기자격증어쩌고 듣고 -> 시작하면됨
 ## 📅 [Daily 루틴: 전일 학습 몰입 모드 (월-금)]
