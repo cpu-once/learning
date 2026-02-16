@@ -6,5 +6,7 @@
 .obsidian/graph.json
 .obsidian/workspace.json
 
+/routine/
+/Raw_data.md
 .trash/
 .DS_Store
