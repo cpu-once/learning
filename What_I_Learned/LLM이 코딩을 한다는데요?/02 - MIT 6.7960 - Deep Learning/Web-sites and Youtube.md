@@ -1,0 +1,1 @@
+mit web : https://ocw.mit.edu/courses/6-7960-deep-learning-fall-2024/
