@@ -1,0 +1,7 @@
+- I'm Switching to Meramid.js for Architecture & AI Collaboration
+	- Why mermaid?
+		- Version Control
+			- Diagrams live in Git.
+			- Now, We can see diffs of how our logic changed over time.
+		- AI Synergy : LLMs (like Gemini) speak mermaid fluently. It's the bridge between our "vibe" and actual implementation.
+		- Caution : "Vibe Coding" is NOT output consistently. So, This Mermaid Oriented Vibe Coding can helps our "Code Selection"
