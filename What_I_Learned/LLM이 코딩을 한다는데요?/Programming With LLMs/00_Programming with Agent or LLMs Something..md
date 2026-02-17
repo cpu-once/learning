@@ -5,6 +5,7 @@ First, I explore the most effective ways to prompt and define the architecture o
 
 Second, this project follows a "Learning Log" format. By cloning the repository and following the steps, you will understand how to manage the workflow and identify which additional subjects you need to study—something I am also actively working on myself. More in-depth topics will be covered in separate posts.
 
+To-do : git branch 따기.
 
 # IN PROGRESS
 ##  Proposed Structure: Programming with Agents & LLMs
