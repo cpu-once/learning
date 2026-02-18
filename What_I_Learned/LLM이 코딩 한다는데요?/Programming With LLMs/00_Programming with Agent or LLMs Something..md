@@ -15,7 +15,7 @@ To-do : git branch 따기.
 Before touching an agent, the human must define the boundaries. This section of your project could focus on:
 - Prerequisites : 
 	- Learning mermaid and studying [[Mermaid for JavaDev]] 
-	- Stanford CS146S [[What_I_Learned/LLM이 코딩을 한다는데요?/00 - Standford CS146S - The Modern Software Developer/Web-sites and Youtube]]
+	- Stanford CS146S [[What_I_Learned/LLM이 코딩 한다는데요?/00 - Standford CS146S - The Modern Software Developer/Web-sites and Youtube]]
 
 - Constraints vs Autonomy
 	- Constraints
